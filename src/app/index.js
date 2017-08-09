@@ -5,7 +5,7 @@ import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 
 class App extends React.Component{
-    render(){ 
+    render(){
       return (
           <div className="container">
             <div className="row">
@@ -15,7 +15,7 @@ class App extends React.Component{
             </div>
             <div className="row">
               <div className="col-xs-10 col-xs-offset-1">
-                <Home name={"Ryan"} age={24} />
+                <Home name={"Ryan"} initialAge={24} />
               </div>
             </div>
           </div>
