@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 export class Home extends React.Component{
   constructor(props){
@@ -7,6 +8,11 @@ export class Home extends React.Component{
         age: props.initialAge,
         status: 0
     };
+    setTimeout(() => {
+        this.setState({
+            status: 1
+        });
+    },3000)
   }
 
   onMakeOlder(){
